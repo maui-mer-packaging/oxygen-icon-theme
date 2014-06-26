@@ -1,0 +1,66 @@
+Name         : oxygen-icon-theme
+Version      : 4.13.2
+Release      : 1
+Group        : System/GUI/Other
+License      : LGPLv2.1+
+Summary      : Oxygen icon theme
+Description  : |
+  Oxygen icon theme.
+URL          : http://www.kde.org
+SetupOptions : -q -n %{name}-%{version}/upstream
+BuildArch    : noarch
+
+Sources:
+    #- http://download.kde.org/stable/%{version}/src/oxygen-icons-%{version}.tar.xz
+    - "%{name}-%{version}.tar.xz"
+
+RpmLintIgnore:
+    - no-changelogname-tag
+
+Configure    : none
+Builder      : none
+
+PkgBR:
+    - kde5-rpm-macros
+    - extra-cmake-modules
+    - fdupes
+PkgConfigBR:
+    - Qt5Core
+    - Qt5DBus
+    - Qt5Xml
+    - Qt5Network
+    - Qt5Gui
+    - Qt5Widgets
+    - Qt5Concurrent
+    - Qt5Test
+Requires:
+    - kde5-filesystem
+
+Files:
+    - "%doc AUTHORS CONTRIBUTING COPYING"
+    - "%dir %{_datadir}/icons/oxygen/"
+    - "%ghost %{_datadir}/icons/oxygen/icon-theme.cache"
+    - "%exclude %{_datadir}/icons/oxygen/scalable/*/*"
+    - "%exclude %{_datadir}/icons/oxygen/128x128/*/*"
+    - "%exclude %{_datadir}/icons/oxygen/256x256/*/*"
+    - "%exclude %{_datadir}/icons/oxygen/512x512/*/*"
+    - "%{_datadir}/icons/oxygen/"
+
+SubPackages:
+    - Name: large
+      Group: System/GUI/Other
+      Summary: Oxygen icon theme, large and non-scalable version
+      Description: |
+        This package contains the large (128x128 and larger) non-scalable icons
+        of the Oxygen icon theme.
+      Files:
+           - "%{_datadir}/icons/oxygen/128x128/"
+           - "%{_datadir}/icons/oxygen/256x256/"
+           - "%{_datadir}/icons/oxygen/512x512/"
+    - Name: scalable
+      Group: System/GUI/Other
+      Summary: Oxygen icon theme, scalable version
+      Description: |
+        This package contains the scalable icons of the Oxygen icon theme.
+      Files:
+           - "%{_datadir}/icons/oxygen/scalable/"
