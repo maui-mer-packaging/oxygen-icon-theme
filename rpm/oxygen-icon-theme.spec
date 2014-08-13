@@ -95,10 +95,10 @@ touch  %{buildroot}%{_datadir}/icons/oxygen/icon-theme.cache
 %doc AUTHORS CONTRIBUTING COPYING
 %dir %{_datadir}/icons/oxygen/
 %ghost %{_datadir}/icons/oxygen/icon-theme.cache
-%exclude %{_datadir}/icons/oxygen/scalable/*/*
-%exclude %{_datadir}/icons/oxygen/128x128/*/*
-%exclude %{_datadir}/icons/oxygen/256x256/*/*
-%exclude %{_datadir}/icons/oxygen/512x512/*/*
+%exclude %{_datadir}/icons/oxygen/scalable/
+%exclude %{_datadir}/icons/oxygen/128x128/
+%exclude %{_datadir}/icons/oxygen/256x256/
+%exclude %{_datadir}/icons/oxygen/512x512/
 %{_datadir}/icons/oxygen/
 # >> files
 # << files
