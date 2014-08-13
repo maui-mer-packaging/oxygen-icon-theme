@@ -21,7 +21,7 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
     - fdupes
 PkgConfigBR:
@@ -34,7 +34,7 @@ PkgConfigBR:
     - Qt5Concurrent
     - Qt5Test
 Requires:
-    - kde5-filesystem
+    - kf5-filesystem
 
 Files:
     - "%doc AUTHORS CONTRIBUTING COPYING"

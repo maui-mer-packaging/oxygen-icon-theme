@@ -18,7 +18,7 @@ URL:        http://www.kde.org
 Source0:    %{name}-%{version}.tar.xz
 Source100:  oxygen-icon-theme.yaml
 Source101:  oxygen-icon-theme-rpmlintrc
-Requires:   kde5-filesystem
+Requires:   kf5-filesystem
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(Qt5Xml)
@@ -27,7 +27,7 @@ BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Test)
-BuildRequires:  kde5-rpm-macros
+BuildRequires:  kf5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  fdupes
 
@@ -62,7 +62,7 @@ This package contains the scalable icons of the Oxygen icon theme.
 
 %build
 # >> build pre
-%kde5_make
+%kf5_make
 # << build pre
 
 
@@ -73,7 +73,7 @@ This package contains the scalable icons of the Oxygen icon theme.
 %install
 rm -rf %{buildroot}
 # >> install pre
-%kde5_make_install
+%kf5_make_install
 # << install pre
 
 # >> install post
