@@ -35,6 +35,7 @@ PkgConfigBR:
     - Qt5Test
 Requires:
     - kf5-filesystem
+    - hicolor-icon-theme
 
 Files:
     - "%doc AUTHORS CONTRIBUTING COPYING"

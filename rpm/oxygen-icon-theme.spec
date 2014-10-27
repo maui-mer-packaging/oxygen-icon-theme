@@ -19,6 +19,7 @@ Source0:    %{name}-%{version}.tar.xz
 Source100:  oxygen-icon-theme.yaml
 Source101:  oxygen-icon-theme-rpmlintrc
 Requires:   kf5-filesystem
+Requires:   hicolor-icon-theme
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(Qt5Xml)
