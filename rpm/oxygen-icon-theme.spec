@@ -10,7 +10,7 @@ Name:       oxygen-icon-theme
 
 Summary:    Oxygen icon theme
 Version:    4.13.2
-Release:    1
+Release:    2
 Group:      System/GUI/Other
 License:    LGPLv2.1+
 BuildArch:  noarch
